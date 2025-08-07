@@ -1,4 +1,4 @@
-# Robotics Learning Sprint - Month 1
+# Robotics Progress - Month 1
 
 Focused on fundamentals for integrating AI with robotics. Covered kinematics, ROS2, simulation, computer vision, and basic LLM control.
 
