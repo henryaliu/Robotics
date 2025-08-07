@@ -1,0 +1,9 @@
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/uninstall.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/ros2_arm3dof_uninstall.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/test.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/edit_cache.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/list_install_components.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/install.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/install/local.dir
+/mnt/c/Users/light/OneDrive - University of Adelaide/Desktop/Robotics Learning/ros2_arm3dof/build/ros2_arm3dof/CMakeFiles/install/strip.dir

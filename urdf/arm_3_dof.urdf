@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<robot name="arm_3_dof">
+
+  <material name="purple">
+    <color rgba="0.396 0 0.686 0.8"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.15"/>
+      </geometry>
+      <origin xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <!-- Main arm segment -->
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.4"/>
+      </geometry>
+      <origin xyz="0 0 0.2"/>
+      <material name="purple"/>
+    </visual>
+    <!-- Rotational cylinder at base -->
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.08"/>
+      </geometry>
+      <origin xyz="0 0 0.025"/>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <!-- Joint 1 (Base rotation) -->
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0.1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="1.0"/>
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <visual>
+      <geometry>
+        <box size="0.08 0.08 0.35"/>
+      </geometry>
+      <origin xyz="0 0 0.175"/>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <!-- Joint 2 (Shoulder) -->
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0.4"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="100" velocity="1.0"/>
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="link3">
+    <visual>
+      <geometry>
+        <box size="0.06 0.06 0.3"/>
+      </geometry>
+      <origin xyz="0 0 0.15"/>
+      <material name="purple"/>
+    </visual>
+  </link>
+
+  <!-- Joint 3 (Elbow) -->
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 0.35"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.0" upper="2.0" effort="100" velocity="1.0"/>
+  </joint>
+
+  <!-- End Effector -->
+  <link name="end_effector">
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <!-- End Effector Joint -->
+  <joint name="end_effector_joint" type="fixed">
+    <parent link="link3"/>
+    <child link="end_effector"/>
+    <origin xyz="0 0 0.3"/>
+  </joint>
+
+</robot>
